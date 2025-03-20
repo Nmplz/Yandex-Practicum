@@ -8,4 +8,4 @@ def digit_root(digit):
         return result
 
 
-print(digit_root(889987))
+print(digit_root(19999889987))
