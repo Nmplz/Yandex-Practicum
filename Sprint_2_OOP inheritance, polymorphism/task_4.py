@@ -2,10 +2,11 @@ class EmployeeSalary:
     HOURLY_PAYMENT = 400
 
     def __init__(self, name, hours=None, rest_days=2, email=None):
+
         self.name = name
         self.rest_days = rest_days
-        self.hours = self.get_hours(name, hours, rest_days, email)
-        self.email = self.get_email(name, hours, rest_days, email)
+        self.hours = hours
+        self.email = email
 
     @classmethod
     def get_hours(cls, name, hours, rest_days, email):
