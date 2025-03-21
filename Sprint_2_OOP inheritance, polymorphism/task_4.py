@@ -1,5 +1,6 @@
 class EmployeeSalary:
-    HOURLY_PAYMENT = 400
+
+    hourly_payment = 400
 
     def __init__(self, name, hours=None, rest_days=2, email=None):
 
@@ -22,7 +23,7 @@ class EmployeeSalary:
 
     @classmethod
     def set_hourly_payment(cls, hourly_payment):
-        cls.HOURLY_PAIMENT = hourly_payment
+        cls.hourly_payment = hourly_payment
 
     def salary(self):
-        return self.hours * self.HOURLY_PAYMENT
+        return self.hours * self.hourly_payment

@@ -20,9 +20,6 @@ class Results:
             "Метод number_of_losses() должен быть переопределён в подклассе"
         )
 
-    def total_points(self):
-        return f"Общее количество очков: {self.victories * 3 + self.draws}"
-
 
 class Football(Results):
     def __init__(self, victories, draws, losses):
@@ -36,6 +33,9 @@ class Football(Results):
 
     def number_of_losses(self):
         return f"Футбольных поражений: {self.losses}"
+
+    def total_points(self):
+        return f"Общее количество очков: {self.victories * 3 + self.draws}"
 
 
 class Hockey(Results):
@@ -51,6 +51,9 @@ class Hockey(Results):
 
     def number_of_losses(self):
         return f"Хоккейных поражений: {self.losses}"
+    
+    def total_points(self):
+        return f"Общее количество очков: {self.victories * 2 + self.draws}"
 
 
 football_team = Football(2, 2, 2)
