@@ -1,5 +1,5 @@
 import pytest
-from miles import HobbitsPriorityStatus
+from .miles import HobbitsPriorityStatus
 
 
 class TestHobbitsPriorityStatus:
