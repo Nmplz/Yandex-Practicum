@@ -1,6 +1,4 @@
 import pytest
-
-# импортируем класс HobbitsPriorityStatus из файла miles.py
 from miles import HobbitsPriorityStatus
 
 
