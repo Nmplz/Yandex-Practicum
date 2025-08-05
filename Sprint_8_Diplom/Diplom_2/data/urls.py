@@ -1,0 +1,12 @@
+class Urls:
+    BASE_URL = 'https://stellarburgers.nomoreparties.site'
+    GET_INGRIDIENTS_URL = f'{BASE_URL}/api/ingredients'
+    CREATE_ORDER_URL = f'{BASE_URL}/api/orders'
+    CREATE_USER_URL= f'{BASE_URL}/api/auth/register'
+    RESET_USER_PASSWORD_URL = f'{BASE_URL}/api/password-reset'
+    USER_LOGIN_URL = f'{BASE_URL}/api/auth/login'
+    USER_LOGOUT_URL = f'{BASE_URL}/api/auth/logout'
+    USER_INFO_URL = f'{BASE_URL}/api/auth/user'
+    DELETE_USER_URL = f'{BASE_URL}/api/auth/user'
+    GET_ALL_ORDERS_URL = f'{BASE_URL}/api/orders/all'
+    GET_USER_ORDERS_URL = f'{BASE_URL}/api/orders'
